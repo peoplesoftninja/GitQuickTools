@@ -42,3 +42,12 @@ For more info on this
 [Link - Windows](https://stackoverflow.com/questions/15381198/remove-credentials-from-git)
 
 [Link - Mac](https://superuser.com/questions/1064197/how-to-switch-git-user-at-terminal)
+
+## pull from a remote repo
+
+* create a folder in your local system
+* cd to folder
+* git init
+* git pull `url.git`
+
+*Note:* When we have to push it back, we will have to use the following command as well `git remote add origin .git url`
