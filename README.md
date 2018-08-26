@@ -9,7 +9,20 @@
 * git status # make sure all files are added
 * git commit -m `message`
 * git remote add origin `.git` url
+    * In case if you give an incorrect `url` use the following `git remote set-url origin .git`
 * git push -u origin master
+
+You can start coding with the above, but it is best practice to create a seperate branch and push changes to it, this can be done by below commands
+
+* git branch xyz # creates a new branch
+* git checkout xyz # moves branch from master to new xyz branch
+* after above you will do regular `git add *` and `git commit -m "message` this way you will save the work in branch and when done, you can save it in master
+    * git log # to see all the commits
+    * git rebase -i HEAD~x # to squash(remove) commmits, you will get 2 VI sessions, one for removing commit, and second for writing a combined commit log. x is for the number of commits you want to combine
+* git checkout master
+* git merge xyz
+* git push origin master # to actually push the code to github.com
+    * Instead of this we can push the branch directly by using the command `git push -u origin xyz` before we checkout
 
 ## To push an existing repo
 
